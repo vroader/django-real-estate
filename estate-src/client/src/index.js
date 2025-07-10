@@ -9,10 +9,8 @@ import "./index.css"; // Importando o CSS global
 
 ReactDOM.render(
     <>
-        <Provider store={store}>
-            <BrowserRouter>
-                <App />
-            </BrowserRouter>
+        <Provider store={store}>            
+            <App />            
         </Provider>,
     </>,
     document.getElementById("root")
