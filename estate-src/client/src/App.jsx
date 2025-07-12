@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 import PropertiesPage from "./pages/PropertiesPage";
 import NotFound from "./components/NotFound";
 
@@ -21,6 +22,7 @@ const App = () => {
                             path="/properties" 
                             element={<PropertiesPage/>}
                         />
+                        <Route path='/login' element={<LoginPage />} />
                         <Route 
                             path="*" 
                             element={<NotFound />} />
