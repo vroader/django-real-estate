@@ -5,7 +5,7 @@ import Spinner from "../components/Spinner";
 import {toast} from 'react-toastify';
 import Property from '../components/Property';
 import { getProperties, reset } from '../features/properties/propertySlice.js'
-import propertyAPIService from '../features/properties/propertyAPIService.js';
+import Title from '../components/Title';
 
 const PropertiesPage = () => {
   const {properties, isLoading, isError,message} = useSelector((state) => state.properties);
@@ -25,6 +25,7 @@ const PropertiesPage = () => {
 
   return (
     <>
+      <Title title='Our Properties Catalog'/>
         <Container className='mt-5'>
             <Row>
                 <Col className='mg-top text-center'>
